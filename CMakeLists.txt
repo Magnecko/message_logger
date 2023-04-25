@@ -37,7 +37,7 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 add_compile_options(-fPIC)
 
-ament_auto_add_library(${PROJECT_NAME}
+ament_auto_add_library(${PROJECT_NAME} SHARED
   src/log/globals.cpp
   src/time/Time.cpp
   src/time/TimeStd.cpp
